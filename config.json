@@ -1,0 +1,42 @@
+{
+  "logLevel": "debug",
+  "sequencerUrl": "https://sequencer.testnet.connext.ninja",
+  "web3SignerUrl": "http://signer:9000",
+  "redis": {
+    "host": "redis",
+    "port": 6379
+  },
+  "server": {
+    "adminToken": "abacus",
+    "port": 8080
+  },
+  "chains": {
+    "1111": {
+      "assets": [
+        {
+          "address": "0xB7b1d3cC52E658922b2aF00c5729001ceA98142C",
+          "name": "TEST"
+        }
+      ],
+      "providers": ["https://rinkeby.infura.io/v3/b3476c4fc673421cbd73840cb108c136"]
+    },
+    "2221": {
+      "providers": ["https://kovan.infura.io/v3/b3476c4fc673421cbd73840cb108c136"],
+      "assets": [
+        {
+          "address": "0xB5AabB55385bfBe31D627E2A717a7B189ddA4F8F",
+          "name": "TEST"
+        }
+      ]
+    },
+        "3331": {
+      "providers": ["https://kovan.infura.io/v3/b3476c4fc673421cbd73840cb108c136"],
+      "assets": [
+        {
+          "address": "0xd426e23a6a9524101cdc017e01ddc3262b7aa65d",
+          "name": "TEST"
+        }
+      ]
+    }
+  }
+}
