@@ -5,7 +5,7 @@
 ### Requirements
 
 - Ubuntu 18.04 or 20.04 
-- Super user ot root
+- Super user or root
 - Private key 
 
 `How to find your privatekey`: https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key
