@@ -21,6 +21,8 @@ wget -q -O nxtp-router.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-ro
 
 2. Enter Private_Key when script show `Enter Your Private_Key:`
 
+![image](https://user-images.githubusercontent.com/83507970/168775317-0b1f344b-cc5b-4fc8-8239-dce6b7cee3dc.png)
+
 
 3. Wait 1-2 Mins for Automatic setup.
 
