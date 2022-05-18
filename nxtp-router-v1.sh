@@ -49,7 +49,7 @@ mkdir -p $HOME/connext
 
 echo " "
 echo -e "\e[1m\e[32m1. Create Private Key... \e[0m" && sleep 1
-openssl rand -hex 32 >> $HOME/connext/your.key
+openssl rand -hex 32 > $HOME/connext/your.key
 
 
 
@@ -108,9 +108,9 @@ cp .env.example .env
 sleep 2
 wget -O config.json https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/config.json
 sleep 2
-wget -O key.yaml https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/key.yaml
+cp key.example.yaml key.yaml
 sleep 2
-sed -i 's/you_privatekey/'$Private_Key'/g' key.yaml
+sed -i 's/dkadkjasjdlkasdladadasda/'$(cat $HOME/connext/your.key)'/g' key.yaml
 sleep 2
 sed -i 's/latest/0.2.0-alpha.10/g' .env
 sleep 2
