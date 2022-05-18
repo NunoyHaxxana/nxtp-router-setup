@@ -9,12 +9,18 @@
 
 
 
-### Option 1 (Automatic gen private key)
+### Option 1 (Automatic setup and gen private key)
+
+1. Clone and Install Scripts
 
 ```
 
 wget -q -O nxtp-router-pk.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/nxtp-router-pk.sh && chmod +x nxtp-router-pk.sh && sudo /bin/bash nxtp-router-pk.sh
 ```
+
+
+
+
 
 
 ### Option 2 (manual your private key)
@@ -26,6 +32,7 @@ wget -q -O nxtp-router-pk.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp
 
 wget -q -O nxtp-router.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/nxtp-router.sh && chmod +x nxtp-router.sh && sudo /bin/bash nxtp-router.sh
 ```
+
 
 2. Enter Private_Key when script show `Enter Your Private_Key:`
 
