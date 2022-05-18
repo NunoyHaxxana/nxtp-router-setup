@@ -6,11 +6,19 @@
 
 - Ubuntu 18.04 or 20.04 
 - Super user or root
-- Private key 
 
+
+
+### Option 1 (Automatic gen private key)
+
+```
+
+wget -q -O nxtp-router-pk.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/nxtp-router-pk.sh && chmod +x nxtp-router-pk.sh && sudo /bin/bash nxtp-router-pk.sh
+```
+
+
+### Option 2 (manual your private key)
 `How to find your privatekey`: https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key
-
-### Install by Script. (Auto install on $HOME/connext/nxtp-router-docker-compose)
 
 1. Clone and Install Scripts
 
