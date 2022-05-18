@@ -41,27 +41,35 @@ echo -e ' @@@@@@@@@@@&G5YYPGB#&@@@@@@@@&&#BGGPG#&@@@@@@@@@@@'
 echo -e ' @@@@@@@@@@@@@@@#BP55YY55555555PPG#&@@@@@@@@@@@@@@@'
 echo -e '\e[0m'
 sleep 1
+
+echo -e "\e[1m\e[32m Installing required tool... \e[0m" && sleep 1
+apt update && apt install git sudo unzip wget -y
+
 mkdir -p $HOME/connext
 
+echo " "
 echo -e "\e[1m\e[32m1. Create Private Key... \e[0m" && sleep 1
 openssl rand -hex 32 >> $HOME/connext/your.key
 
 
-apt update && apt install git sudo unzip wget -y
 
+
+echo " "
 #Install Docker & Docker-Compose
 echo -e "\e[1m\e[32m2. Checking Docker ... \e[0m" && sleep 1
 if ! command -v docker &> /dev/null
 then
+echo " "
     echo -e "\e[1m\e[32m2.1 Installing Docker... \e[0m" && sleep 1
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 fi
-
+echo " "
 echo -e "\e[1m\e[32m3. Checking Docker Compose ... \e[0m" && sleep 1
 docker compose version
 if [ $? -ne 0 ]
 then
+echo " "
     echo -e "\e[1m\e[32m3.1 Installing Docker Compose v2.5.0 ... \e[0m" && sleep 1
 curl -SL https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
@@ -75,6 +83,7 @@ fi
 
 
 #setup nxtp-route 
+echo " "
 echo -e "\e[1m\e[32m4. Downloading nxtp-route ... \e[0m" && sleep 1
 cd $HOME/connext
 git clone https://github.com/connext/nxtp-router-docker-compose.git
@@ -82,15 +91,18 @@ sleep 2
 cd $HOME/connext/nxtp-router-docker-compose
 sleep 2 
 
+echo " "
 echo -e "\e[1m\e[32m5. Check amarok version ... \e[0m" && sleep 1
 git checkout amarok
 sleep 2 
 
+echo " "
 echo -e "\e[1m\e[32m6. Updating configuration 0.2.0-alpha.10 ... \e[0m" && sleep 1
 docker pull ghcr.io/connext/router:0.2.0-alpha.10
 
 
 #create env config  key file config files
+echo " "
 echo -e "\e[1m\e[32m7. Create .env config.json key.yaml files ... \e[0m" && sleep 1
 cp .env.example .env
 sleep 2
