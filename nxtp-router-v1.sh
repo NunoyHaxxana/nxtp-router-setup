@@ -125,5 +125,6 @@ echo "=================================================="
 
 echo -e "\e[1m\e[32m nxtp-router Started \e[0m"
 echo -e "\e[1m\e[92m Private Key:  \e[0m" $(cat $HOME/connext/your.key)
+echo -e "\e[1m\e[92m Address:  \e[0m" $(curl -s localhost:8000/config | cut -d '"' -f 4)
 
 echo "=================================================="
