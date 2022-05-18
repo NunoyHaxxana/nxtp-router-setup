@@ -78,8 +78,8 @@ sleep 2
 sed -i 's/you_privatekey/'$Private_Key'/g' key.yaml
 sleep 2
 sed -i 's/latest/0.2.0-alpha.10/g' .env
-
-   
+sleep 2
+docker-compose down   
 
 sleep 2
 docker compose up -d
