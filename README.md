@@ -10,6 +10,9 @@
 
 
 ### Option 1 (Automatic setup and gen private key)
+You just wait for the script to run.
+It will install everything for you. without you having to modify anything.
+Once the installation process is complete, you can use your private key and address from script to create an LP.
 
 1. Clone and Install Scripts
 
