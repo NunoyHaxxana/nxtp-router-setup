@@ -104,6 +104,7 @@ docker pull ghcr.io/connext/router:0.2.0-alpha.10
 #create env config  key file config files
 echo " "
 echo -e "\e[1m\e[32m7. Create .env config.json key.yaml files ... \e[0m" && sleep 1
+cd $HOME/connext/nxtp-router-docker-compose
 cp .env.example .env
 sleep 2
 wget -O config.json https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/config.json
