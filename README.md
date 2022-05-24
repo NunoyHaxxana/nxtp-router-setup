@@ -17,7 +17,7 @@
 
 ```
 
-wget -q -O nxtp-router-pk.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/nxtp-router-pk.sh && chmod +x nxtp-router-pk.sh && sudo /bin/bash nxtp-router-pk.sh
+wget -q -O router_setup.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/router_setup.sh && chmod +x router_setup.sh && sudo /bin/bash router_setup.sh
 ```
 
 
