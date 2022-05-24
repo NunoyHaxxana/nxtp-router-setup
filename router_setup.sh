@@ -171,11 +171,11 @@ Installingrequiredtool
 Installingdocker
 installnxtp
 coreversion_amarok
+set0.2.0-beta.0
 createConfig
 setenvfile
 createpk
 setautokeyfile
-set0.2.0-beta.0
 dockerpull
 dockerup
 echo -e "\e[1m\e[32mYour Router was Install!\e[0m" && sleep 1
@@ -188,10 +188,10 @@ Installingrequiredtool
 Installingdocker
 installnxtp
 coreversion_amarok
+set0.2.0-beta.0
 createConfig
 setenvfile
 setyourkeyfile
-set0.2.0-beta.0
 dockerpull
 dockerup
 echo -e "\e[1m\e[32mYour Router was Install!\e[0m" && sleep 1
