@@ -150,6 +150,7 @@ echo " "
 echo -e "\e[1m\e[32mPreparing Delete Router ... \e[0m" && sleep 1
 cd $HOME/connext/nxtp-router-docker-compose
 docker-compose down
+cd $HOME
 rm -rf $HOME/connext/nxtp-router-docker-compose
 }
 
