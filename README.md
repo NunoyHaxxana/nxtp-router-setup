@@ -1,59 +1,57 @@
-# Script for install NXTP Router `V.0.2.0-alpha.10`
+![router setup](https://user-images.githubusercontent.com/83507970/170120644-be13ee8c-486c-43e5-a2ce-f88c4f2aaaa5.png)
 
-## Router Setup Using Linux & Docker
+# Script for install Connext Router `0.2.0-beta.0`
+
+
 
 ### Requirements
 
-- Ubuntu 18.04 or 20.04 
-- Super user or root
+- OS Ubuntu 18.04 or 20.04 
+- Need Super user or root for run this script.
+- You can check the current Router version in the https://github.com/connext/nxtp/releases
 
 
-
-### Option 1 (Automatic setup and gen private key)
-You just wait for the script to run.
-It will install everything for you. without you having to modify anything.
-Once the installation process is complete, you can use your private key and address from script to create an LP.
-
-1. Clone and Install Scripts
+## Clone and Install Scripts
 
 ```
 
 wget -q -O nxtp-router-pk.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/nxtp-router-pk.sh && chmod +x nxtp-router-pk.sh && sudo /bin/bash nxtp-router-pk.sh
 ```
 
-![unknown](https://user-images.githubusercontent.com/83507970/169020745-202c7d1f-fa58-47e6-a91c-c557619c26e1.png)
+
+
+
+![image](https://user-images.githubusercontent.com/83507970/170120882-96064529-8c8f-444d-880a-c9f4e188f6b1.png)
+
+Choose you wanted option (for example option 1 Install with Auto PKey), press enter and wait for installation to complete.
+
+ 1) Install with Auto PKey
+> Install router and auto gen private key on key.yaml
+
+ 2) Install with Your PKey
+> Install router with your private key
+
+ 3) Upgrade Version
+> Upgrade router to new version
+
+ 4) Backup PKey
+> Backup and show your private key
+
+ 5) Delete
+> Delete Router and Data File
 
 
 
 
 
-### Option 2 (manual your private key)
-`How to find your privatekey`: https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key
-
-1. Clone and Install Scripts
-
-```
-
-wget -q -O nxtp-router.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/nxtp-router.sh && chmod +x nxtp-router.sh && sudo /bin/bash nxtp-router.sh
-```
-
-
-2. Enter Private_Key when script show `Enter Your Private_Key:`
-
-![image](https://user-images.githubusercontent.com/83507970/168775317-0b1f344b-cc5b-4fc8-8239-dce6b7cee3dc.png)
-
-
-3. Wait 1-2 Mins for Automatic setup.
-
-
-4. Fisnish install command pmpt show `Your Router installed and works!`
 
 
 
 
 
 
-5. (Optional) Command
+
+### (Optional) Command
 - Monitor router real time log.
 ```
 docker logs --follow --tail 100 router
@@ -80,15 +78,4 @@ docker-compose down
 
 
 
-### Update Router Version
 
-1. Modify `.env` to change `NXTP_VERSION`
-
-ROUTER_VERSION=xxxxxxx
-
-2. Update stack
-
-```
-docker-compose pull
-docker-compose up -d
-```
