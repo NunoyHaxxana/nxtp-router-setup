@@ -64,7 +64,7 @@ cd $HOME/connext/nxtp-router-docker-compose
 sleep 2 
 git checkout amarok
 sleep 2 
-docker pull ghcr.io/connext/router:0.2.0-alpha.10
+#docker pull ghcr.io/connext/router:0.2.0-alpha.10
 
 
 #create env config  key file
