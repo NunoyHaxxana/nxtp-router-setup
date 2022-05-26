@@ -87,7 +87,7 @@ cp config.example.json config.json
 function setenvfile {
 cd $HOME/connext/nxtp-router-docker-compose
 cp .env.example .env
-sed -i 's/latest/0.2.0-beta.0/g' .env
+sed -i 's/latest/0.2.0-beta.1/g' .env
 }
 
 
@@ -116,11 +116,11 @@ sed -i 's/dkadkjasjdlkasdladadasda/'${yourpk}'/g' key.yaml
 }
 
 
-function set0.2.0-beta.0 {
+function set0.2.0-beta.1 {
 echo " "
-echo -e "\e[1m\e[32mPreparing Router v0.2.0-beta.0 ... \e[0m" && sleep 1
+echo -e "\e[1m\e[32mPreparing Router v0.2.0-beta.1 ... \e[0m" && sleep 1
 cd $HOME/connext/nxtp-router-docker-compose
-docker pull ghcr.io/connext/router:0.2.0-beta.0
+docker pull ghcr.io/connext/router:0.2.0-beta.1
 }
 
 
@@ -171,7 +171,7 @@ Installingrequiredtool
 Installingdocker
 installnxtp
 coreversion_amarok
-set0.2.0-beta.0
+set0.2.0-beta.1
 createConfig
 setenvfile
 createpk
@@ -188,7 +188,7 @@ Installingrequiredtool
 Installingdocker
 installnxtp
 coreversion_amarok
-set0.2.0-beta.0
+set0.2.0-beta.1
 createConfig
 setenvfile
 setyourkeyfile
