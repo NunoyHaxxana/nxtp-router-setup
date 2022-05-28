@@ -1,6 +1,6 @@
 ![router setup](https://user-images.githubusercontent.com/83507970/170120644-be13ee8c-486c-43e5-a2ce-f88c4f2aaaa5.png)
 
-# Script for install Connext Router `0.2.0-beta.1` + update
+# Script for install Connext Router `0.2.0-beta.8` + Auto update last version.
 
 
 
@@ -17,7 +17,7 @@
 
 ```
 
-wget -q -O router_setup.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/router_setup.sh && chmod +x router_setup.sh && sudo /bin/bash router_setup.sh
+wget -q -O router_setup.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-docker-config/main/router_setup_v2.sh && chmod +x router_setup.sh && sudo /bin/bash router_setup.sh
 ```
 
 
