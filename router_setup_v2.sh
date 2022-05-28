@@ -84,12 +84,6 @@ cp config.example.json config.json
 }
 
 
-function setenvfile {
-cd $HOME/connext/nxtp-router-docker-compose
-cp .env.example .env
-sed -i 's/latest/0.2.0-beta.8/g' .env
-}
-
 
 function upvernxtp {
 cd $HOME/connext/nxtp-router-docker-compose
@@ -119,11 +113,15 @@ sed -i 's/dkadkjasjdlkasdladadasda/'${yourpk}'/g' key.yaml
 }
 
 
-function set0.2.0-beta.8 {
+function setlastver {
 echo " "
-echo -e "\e[1m\e[32mPreparing Router v0.2.0-beta.8 ... \e[0m" && sleep 1
 cd $HOME/connext/nxtp-router-docker-compose
-docker pull ghcr.io/connext/router:0.2.0-beta.8
+cp .env.example .env
+curl -fsSLI -o /dev/null -w %{url_effective} https://github.com/connext/nxtp/releases/latest | awk 'BEGIN{FS="v"} {print $2}' > nxtp.version
+echo " "
+echo -e "\e[1m\e[32mLast NXTP Version : $(cat $HOME/connext/nxtp-router-docker-compose/nxtp.version)\e[0m" && sleep 1
+sed -i 's/latest/'$(cat $HOME/connext/nxtp-router-docker-compose/nxtp.version)'/g' .env
+docker pull ghcr.io/connext/router:$(cat $HOME/connext/nxtp-router-docker-compose/nxtp.version)
 }
 
 
@@ -174,9 +172,8 @@ Installingrequiredtool
 Installingdocker
 installnxtp
 coreversion_amarok
-set0.2.0-beta.8
+setlastver
 createConfig
-setenvfile
 createpk
 setautokeyfile
 dockerpull
@@ -191,9 +188,8 @@ Installingrequiredtool
 Installingdocker
 installnxtp
 coreversion_amarok
-set0.2.0-beta.8
+setlastver
 createConfig
-setenvfile
 setyourkeyfile
 dockerpull
 dockerup
