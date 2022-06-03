@@ -34,6 +34,7 @@ wget -q -O router_setup.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-r
 ```
 
 
+
 ![image](https://user-images.githubusercontent.com/83507970/171801249-e684a66a-2f01-4746-a913-f46f99c33896.png)
 
 
@@ -43,7 +44,7 @@ Choose you wanted option (for example option 1 Install with Auto PKey), press en
 # Menu options:
 
 
-| No           | Menu | Detail| 
+| No           | Menu | Detail | 
 | ------------ | :--------: | :--------: | 
 | 1            | Install + Auto PKey | Automatically Install router and generate private key| 
 | 2            | Install + Your PKey | Automatically Install router with your private key| 
@@ -54,9 +55,16 @@ Choose you wanted option (for example option 1 Install with Auto PKey), press en
 | 7            | Quit | Quit on menu | 
 
 
+- Auto Switched to a new branch 'amarok' and Auto get Last NXTP Version
+![image](https://user-images.githubusercontent.com/83507970/171803537-053a5b3f-b807-4eb5-b6c6-e230e8f9796e.png)
 
+- On menu Manual Upgrade, Your can insert NXTP Version need to upgade.
+![image](https://user-images.githubusercontent.com/83507970/171803972-353f9884-9c77-4e85-a576-4cb556c78995.png)
 
 ---
+
+
+
 
 
 
