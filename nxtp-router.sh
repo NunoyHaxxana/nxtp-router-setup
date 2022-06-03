@@ -223,7 +223,7 @@ break
 ;;
 
 "Manual Upgrade")
-            echo -e '\e[1m\e[32mYou choose Upgrade Version ...\e[0m' && sleep 1
+            echo -e '\e[1m\e[32mYou choose Manual Upgrade Version ...\e[0m' && sleep 1
 dockerdown
 manupvernxtp
 dockerpull
