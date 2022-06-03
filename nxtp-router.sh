@@ -192,6 +192,7 @@ setautokeyfile
 dockerpull
 dockerup
 echo -e "\e[1m\e[32mYour Router was Install!\e[0m" && sleep 1
+echo -e "\e[1m\e[92mYour Private Key:  \e[0m" $(cat $HOME/connext/router_private_key.json)&& sleep 1
 break
 ;;
 
