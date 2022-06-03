@@ -58,11 +58,20 @@ Choose you wanted option (for example option 1 Install with Auto PKey), press en
 - Auto Switched to a new branch 'amarok' and Auto get Last NXTP Version
 ![image](https://user-images.githubusercontent.com/83507970/171803537-053a5b3f-b807-4eb5-b6c6-e230e8f9796e.png)
 
-- On menu Manual Upgrade, Your can insert NXTP Version need to upgade.
+- On menu 1 (Install + Auto PKey), When finish install. this script show private key your can insert private key to metamask for add LP.
+```* Private Key auto ramdom generate```
+![image](https://user-images.githubusercontent.com/83507970/171806361-9d4e7a6b-6b14-45c9-b2c7-7999b0054d4b.png) 
+
+
+
+- On menu 2 (Install + Your PKey), Your can insert private need to install.
+![image](https://user-images.githubusercontent.com/83507970/171805496-21fa840e-abf8-4951-b226-33e5ac1a9a8f.png)
+
+
+- On menu 4 (Manual Upgrade), Your can insert NXTP Version need to upgade.
 ![image](https://user-images.githubusercontent.com/83507970/171803972-353f9884-9c77-4e85-a576-4cb556c78995.png)
 
 ---
-
 
 
 
