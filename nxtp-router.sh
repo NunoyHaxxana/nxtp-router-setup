@@ -179,7 +179,7 @@ options=("Install + Auto PKey" "Install + Your PKey" "Auto Upgrade" "Manual Upgr
 select opt in "${options[@]}"
 do
     case $opt in
-        "Install with Auto PKey")
+        "Install + Auto PKey")
             echo -e '\e[1m\e[32mYou choose Install Router with auto Private Key ...\e[0m' && sleep 1
 Installingrequiredtool
 Installingdocker
@@ -195,7 +195,7 @@ echo -e "\e[1m\e[32mYour Router was Install!\e[0m" && sleep 1
 break
 ;;
 
-"Install with Your PKey")
+"Install + Your PKey")
             echo -e '\e[1m\e[32mYou choose Install Router with your Private Key ...\e[0m' && sleep 1
 Installingrequiredtool
 Installingdocker
@@ -228,7 +228,7 @@ dockerdown
 manupvernxtp
 dockerpull
 dockerup
-echo -e "\e[1m\e[32mYour Router was upgraded to : ${nxtpv}) \e[0m" && sleep 1
+echo -e "\e[1m\e[32mYour Router was upgraded to : ${nxtpv} \e[0m" && sleep 1
 break
 
 
