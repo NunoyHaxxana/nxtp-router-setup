@@ -1,6 +1,19 @@
 ![router setup](https://user-images.githubusercontent.com/83507970/170120644-be13ee8c-486c-43e5-a2ce-f88c4f2aaaa5.png)
 
-# Script for install Connext Router `0.2.0-beta.8` + Auto update last version.
+# Script for install Connext Router `Last release version` + Auto update last version.
+
+# Detailed of script:
+- Automate to install Docker.
+- Automate to install Docker-compose v2.5.1
+- Automate to install nxtp-router.
+- Automate to get & install Latest version.
+- Automate to get & update Latest version.
+- Manual update version.
+- Automate to generate private key.
+- Automate to backup private key.
+- Automate to swith to amarok.
+- Automate to create and config file .env, key.yaml, config.json
+- Automate to delete nxtp-router file and docker-compose.
 
 
 
@@ -21,31 +34,35 @@ wget -q -O router_setup.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-r
 ```
 
 
+![image](https://user-images.githubusercontent.com/83507970/171801249-e684a66a-2f01-4746-a913-f46f99c33896.png)
 
-
-![image](https://user-images.githubusercontent.com/83507970/170120882-96064529-8c8f-444d-880a-c9f4e188f6b1.png)
 
 Choose you wanted option (for example option 1 Install with Auto PKey), press enter and wait for installation to complete.
 
- **1) Install with Auto PKey** `Automatically Install router and generate private key`
+
+# Menu options:
 
 
- **2) Install with Your PKey** `Automatically Install router with your private key`
-
-
- **3) Upgrade Version** `Upgrade router to new version`
-
-
- **4) Backup PKey** `Backup and show your private key`
-
-
- **5) Delete** `Delete Router and Data File`
-
+| No           | Menu | Detail| 
+| ------------ | :--------: | :--------: | 
+| 1            | Install + Auto PKey | Automatically Install router and generate private key| 
+| 2            | Install + Your PKey | Automatically Install router with your private key| 
+| 3            | Auto Upgrade | Auto upgrade router to new version | 
+| 4            | Manual Upgrade | Manual upgrade router version |  
+| 5            | Backup PKey | Backup and show your private key | 
+| 6            | Delete | Delete Router and Data File |  
+| 7            | Quit | Quit on menu | 
 
 
 
 
 ---
+
+
+
+
+
+
 
 
 
