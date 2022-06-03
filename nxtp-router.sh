@@ -228,7 +228,7 @@ dockerdown
 manupvernxtp
 dockerpull
 dockerup
-echo -e "\e[1m\e[32mYour Router was upgraded to : $(cat $HOME/connext/nxtp-router-docker-compose/nxtp.version)\e[0m" && sleep 1
+echo -e "\e[1m\e[32mYour Router was upgraded to : ${nxtpv}) \e[0m" && sleep 1
 break
 
 
