@@ -121,7 +121,7 @@ echo " "
 echo -e "\e[1m\e[32mPreparing your Private Key ... \e[0m" && sleep 1
 cd $HOME/connext/nxtp-router-docker-compose
 cp key.example.yaml key.yaml
-read -p "Insert your Private Key: " yourpk
+read -p "Insert your Private Key with out 0x: " yourpk
 sed -i 's/dkadkjasjdlkasdladadasda/'${yourpk}'/g' key.yaml
 }
 
