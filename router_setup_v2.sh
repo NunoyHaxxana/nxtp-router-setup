@@ -10,6 +10,7 @@ echo "╚██████╗╚██████╔╝██║ ╚███�
 echo " ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝   ╚═╝   ";
 echo -e "\e[0m"          
 echo "=============================================================="
+#Made by Haxxana
 sleep 3
 echo " "
 
@@ -97,6 +98,18 @@ docker pull ghcr.io/connext/router:$(cat $HOME/connext/nxtp-router-docker-compos
 }
 
 
+function manupvernxtp {
+cd $HOME/connext/nxtp-router-docker-compose
+read -p "Insert Router Version: " nxtpv 
+cp .env.example .env
+echo " "
+echo -e "\e[1m\e[32mInstall NXTP Version : ${nxtpv}\e[0m" && sleep 1
+sed -i 's/latest/'${nxtpv}'/g' .env
+docker pull ghcr.io/connext/router:${nxtpv}
+}
+
+
+
 function setautokeyfile {
 cd $HOME/connext/nxtp-router-docker-compose
 cp key.example.yaml key.yaml
@@ -108,7 +121,7 @@ echo " "
 echo -e "\e[1m\e[32mPreparing your Private Key ... \e[0m" && sleep 1
 cd $HOME/connext/nxtp-router-docker-compose
 cp key.example.yaml key.yaml
-read -p "Insert your Private Key: " yourpk
+read -p "Insert your Private Key with out 0x: " yourpk
 sed -i 's/dkadkjasjdlkasdladadasda/'${yourpk}'/g' key.yaml
 }
 
@@ -161,12 +174,12 @@ rm -rf $HOME/connext/nxtp-router-docker-compose
 
 
 PS3='Please enter your choice (input your option number and press enter): '
-options=("Install with Auto PKey" "Install with Your PKey" "Upgrade Version" "Backup PKey" "Delete" "Quit")
+options=("Install + Auto PKey" "Install + Your PKey" "Auto Upgrade" "Manual Upgrade" "Backup PKey" "Delete" "Quit")
 
 select opt in "${options[@]}"
 do
     case $opt in
-        "Install with Auto PKey")
+        "Install + Auto PKey")
             echo -e '\e[1m\e[32mYou choose Install Router with auto Private Key ...\e[0m' && sleep 1
 Installingrequiredtool
 Installingdocker
@@ -179,10 +192,11 @@ setautokeyfile
 dockerpull
 dockerup
 echo -e "\e[1m\e[32mYour Router was Install!\e[0m" && sleep 1
+echo -e "\e[1m\e[92mYour Private Key:  \e[0m" $(cat $HOME/connext/router_private_key.json)&& sleep 1
 break
 ;;
 
-"Install with Your PKey")
+"Install + Your PKey")
             echo -e '\e[1m\e[32mYou choose Install Router with your Private Key ...\e[0m' && sleep 1
 Installingrequiredtool
 Installingdocker
@@ -197,7 +211,7 @@ echo -e "\e[1m\e[32mYour Router was Install!\e[0m" && sleep 1
 break
 ;;
 
-"Upgrade Version")
+"Auto Upgrade")
             echo -e '\e[1m\e[32mYou choose Upgrade Version ...\e[0m' && sleep 1
 dockerdown
 upvernxtp
@@ -208,6 +222,20 @@ break
 
 
 ;;
+
+"Manual Upgrade")
+            echo -e '\e[1m\e[32mYou choose Manual Upgrade Version ...\e[0m' && sleep 1
+dockerdown
+manupvernxtp
+dockerpull
+dockerup
+echo -e "\e[1m\e[32mYour Router was upgraded to : ${nxtpv} \e[0m" && sleep 1
+break
+
+
+;;
+
+
 "Backup PKey")
 echo -e '\e[1m\e[32mYou choose Backup Private Key ...\e[0m' && sleep 1
 backupPK
