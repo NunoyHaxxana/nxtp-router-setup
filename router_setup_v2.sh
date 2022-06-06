@@ -33,11 +33,18 @@ echo -e "\e[1m\e[32mInstalling Docker ... \e[0m" && sleep 1
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh < "/dev/null"
 fi
+
+
 echo " "
+docker compose version
+if [ $? -ne 0 ]
+then
 echo -e "\e[1m\e[32mInstalling Docker Compose v2.5.1 ... \e[0m" && sleep 1
 curl -SL https://github.com/docker/compose/releases/download/v2.5.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
+sudo chown $USER /var/run/docker.sock
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+fi
 }
 
 
