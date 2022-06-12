@@ -2,9 +2,9 @@ Harden OpenSSH
 
 Script for setup paramitor on sshd_config
 
-- PermitRootLogin no 
+- PermitRootLogin 'no' 
 - PubkeyAuthentication yes
-- AuthorizedKeysFile .ssh/authorized_keys"
+- AuthorizedKeysFile .ssh/authorized_keys
 - PasswordAuthentication no
 - PermitRootLogin no
 - MaxAuthTries 3
