@@ -1,6 +1,28 @@
 How To Set Up SSH Keys on windows & google cloud
 
-Step 1: Open Command Prompt
+Step 1: Verify if OpenSSH Client is Installed
+First, check to see if you have the OpenSSH client installed:
+1. Open the Settings panel, then click Apps.
+2. Under the Apps and Features heading, click Optional Features.
+![image](https://user-images.githubusercontent.com/83507970/173232672-ff3922d3-9932-4575-8941-1806e49c23fa.png)
+
+![image](https://user-images.githubusercontent.com/83507970/173232733-98805781-b528-4a9d-8b5e-48c5ea100633.png)
+
+
+3. Scroll down the list to see if OpenSSH Client is listed.
+
+If it’s not, click the Add a feature. and type ssh.
+Scroll through the list to find and select OpenSSH Client.
+Finally, click Install.
+
+![image](https://user-images.githubusercontent.com/83507970/173232871-de51ad79-f8c0-4a3f-95e9-0002b0e8996c.png)
+
+![image](https://user-images.githubusercontent.com/83507970/173232896-93d66ec7-75e2-4c6d-b930-abe831e75bcd.png)
+
+
+
+
+Step 2: Open Command Prompt
 1. Press the Windows key.
 2. Type cmd.
 3. Under Best Match, right-click Command Prompt.
