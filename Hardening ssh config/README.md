@@ -1,8 +1,8 @@
 Harden OpenSSH 
 
-Script for setup paramitor on sshd_config
+Script for auto setup paramitor on sshd_config
 
-- PermitRootLogin `no` 
+- PermitRootLogin `yes` 
 - PubkeyAuthentication `yes`
 - AuthorizedKeysFile `.ssh/authorized_keys`
 - PasswordAuthentication `no`
