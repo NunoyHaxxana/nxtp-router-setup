@@ -43,7 +43,7 @@ for PARAM in ${param[@]}
   
   
   echo -e "\e[1m\e[32m${param[1]} set to no\e[0m" && sleep 1
-  echo "${param[1]} no" >> ${file}
+  echo "${param[1]} yes" >> ${file}
 
   echo -e "\e[1m\e[32m${param[2]} set to yes\e[0m" && sleep 1
   echo "${param[2]} yes" >> ${file}
