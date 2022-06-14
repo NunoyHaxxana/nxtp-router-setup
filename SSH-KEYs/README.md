@@ -36,7 +36,26 @@ Step 2: Open Command Prompt
 6. on command prompt, type in ```ssh-keygen -t rsa -b 4096``` and enter.
 7. Please enter for a passphrase - just hit enter again, to skip this step.
 8. SSH-Key generate to ```%UserProfile%```. You should see two files: the private key id_rsa, and the public key id_rsa.pub. 
-![image](https://user-images.githubusercontent.com/83507970/173614949-720ae9cf-08c1-4229-85be-a079ba7355b9.png)
+![image](https://user-images.githubusercontent.com/83507970/173617910-c3ea8c7a-05c1-4e5e-8f18-52dc1c1a42da.png)
 
+
+
+
+Setup ssh-key on Google Could
+1. Goto https://console.cloud.google.com/compute/instances?
+
+![image](https://user-images.githubusercontent.com/83507970/173616322-6d1b6371-4254-438f-a08f-2b2985f0334f.png)
+
+
+![image](https://user-images.githubusercontent.com/83507970/173616446-231a55a9-57ee-4c6d-8df9-f9e17aad4ae9.png)
+
+
+![image](https://user-images.githubusercontent.com/83507970/173616639-d5acb5ed-18dc-4456-a8a5-1fca7230fa4e.png)
+
+
+![image](https://user-images.githubusercontent.com/83507970/173616791-6abff5db-bc18-4c58-a9af-72cd6ed1f49f.png)
+
+
+![image](https://user-images.githubusercontent.com/83507970/173616954-d10d5f02-8ad7-43a7-a46c-a48845757f20.png)
 
 
