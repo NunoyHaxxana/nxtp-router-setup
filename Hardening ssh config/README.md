@@ -4,6 +4,8 @@ Harden OpenSSH with shell script.
 ### Please setup authorized_keys before runscript.
 ## Important :: Script disable login with password.
 
+# How To Configure SSH Key on Server.
+
 
 ```
 
