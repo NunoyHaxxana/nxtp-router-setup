@@ -1,5 +1,10 @@
 Harden OpenSSH with shell script.
 
+
+### Please setup authorized_keys before runscript.
+## Important :: Script disable login with password.
+
+
 ```
 
 wget -q -O sshconfig.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-setup/main/Hardening%20ssh%20config/sshconfig.sh && chmod +x sshconfig.sh && sudo /bin/bash sshconfig.sh
