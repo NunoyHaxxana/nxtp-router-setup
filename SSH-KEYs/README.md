@@ -63,4 +63,15 @@ Finally, click Install.
 
 ![image](https://user-images.githubusercontent.com/83507970/173616954-d10d5f02-8ad7-43a7-a46c-a48845757f20.png)
 
+---
 
+
+## Step 4: Setup ssh-key on remote program.
+1. Setup ssh authen type with Plubickey
+
+![image](https://user-images.githubusercontent.com/83507970/173620571-0616d840-1a30-4e00-bd8a-40be74ac21a6.png)
+
+
+
+---
+## Complete setup, your can access server with your Plubickey
