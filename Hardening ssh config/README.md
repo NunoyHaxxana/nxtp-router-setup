@@ -1,8 +1,8 @@
 Harden OpenSSH with shell script.
 
 
-### Please setup authorized_keys before runscript.
-## Important :: Script disable login with password.
+
+## Important :: Script disable login with password. Please setup authorized_keys before runscript.
 
 ### How To Configure SSH Key on Server. : https://github.com/NunoyHaxxana/nxtp-router-setup/tree/main/SSH-KEYs
 
