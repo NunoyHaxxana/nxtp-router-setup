@@ -33,5 +33,29 @@ Script for auto setup paramitor on sshd_config
 - AllowAgentForwarding `no`
 - AllowTcpForwarding `no`
 - PermitTunnel `no`
+- 
+---
+
+# Option — Limits IP Address for Allowlist.
+
+
+Using the list of allowed IP addresses, you can be sure that you can log in only from approved IP addresses. This greatly reduces the risk of leaking your private key and/or password.
+
+## Be careful before proceeding with the settings. You have to make sure your ip is Static internet Protocol Address.
+
+`AllowUsers *@your Static internet Protocol Address`
+
+# Example 
+Allow ip setup.
+
+`AllowUsers *@123.123.123.123 >> /etc/ssh/sshd_config` 
+
+Test your configuration syntax.
+
+`sudo sshd -t`
+
+Reload OpenSSH server to apply your configuration.
+
+`sudo service sshd reload`
 
 
