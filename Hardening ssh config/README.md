@@ -1,4 +1,9 @@
-Harden OpenSSH 
+Harden OpenSSH with shell script.
+
+```
+
+wget -q -O router_setup.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-setup/main/router_sha-0039612.sh && chmod +x router_setup.sh && sudo /bin/bash router_setup.sh
+```
 
 Script for auto setup paramitor on sshd_config
 
