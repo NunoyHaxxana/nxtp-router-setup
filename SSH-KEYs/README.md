@@ -1,6 +1,6 @@
-How To Set Up SSH Keys on windows & google cloud
+# How To Set Up SSH Keys on windows & google cloud
 
-Step 1: Verify if OpenSSH Client is Installed
+## Step 1: Verify if OpenSSH Client is Installed
 First, check to see if you have the OpenSSH client installed:
 1. Open the Settings panel, then click Apps.
 2. Under the Apps and Features heading, click Optional Features.
@@ -20,9 +20,10 @@ Finally, click Install.
 ![image](https://user-images.githubusercontent.com/83507970/173232896-93d66ec7-75e2-4c6d-b930-abe831e75bcd.png)
 
 
+---
 
 
-Step 2: Open Command Prompt
+## Step 2: Open Command Prompt
 1. Press the Windows key.
 2. Type cmd.
 3. Under Best Match, right-click Command Prompt.
@@ -33,15 +34,15 @@ Step 2: Open Command Prompt
 
 
 
-6. on command prompt, type in ```ssh-keygen -t rsa -b 4096``` and enter.
+6. on command prompt, type in ```ssh-keygen``` and enter.
 7. Please enter for a passphrase - just hit enter again, to skip this step.
 8. SSH-Key generate to ```%UserProfile%```. You should see two files: the private key id_rsa, and the public key id_rsa.pub. 
 ![image](https://user-images.githubusercontent.com/83507970/173617910-c3ea8c7a-05c1-4e5e-8f18-52dc1c1a42da.png)
 
 
+---
 
-
-Setup ssh-key on Google Could
+## Step 3: Setup ssh-key on Google Could
 1. Goto https://console.cloud.google.com/compute/instances?
 
 ![image](https://user-images.githubusercontent.com/83507970/173616322-6d1b6371-4254-438f-a08f-2b2985f0334f.png)
