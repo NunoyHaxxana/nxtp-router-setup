@@ -30,3 +30,13 @@ Step 2: Open Command Prompt
 5. If prompted, click Yes in the Do you want to allow this app to make changes to your device? pop-up.
 ![image](https://user-images.githubusercontent.com/83507970/173232072-32e380e4-1e8e-4719-b949-6428fb219a41.png)
 
+
+
+
+6. on command prompt, type in ```ssh-keygen -t rsa -b 4096``` and enter.
+7. Please enter for a passphrase - just hit enter again, to skip this step.
+8. SSH-Key generate to ```%UserProfile%```. You should see two files: the private key id_rsa, and the public key id_rsa.pub. 
+![image](https://user-images.githubusercontent.com/83507970/173614949-720ae9cf-08c1-4229-85be-a079ba7355b9.png)
+
+
+
