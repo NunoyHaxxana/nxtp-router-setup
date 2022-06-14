@@ -48,15 +48,19 @@ Finally, click Install.
 ![image](https://user-images.githubusercontent.com/83507970/173616322-6d1b6371-4254-438f-a08f-2b2985f0334f.png)
 
 2. Clink on your server name.
+
 ![image](https://user-images.githubusercontent.com/83507970/173616446-231a55a9-57ee-4c6d-8df9-f9e17aad4ae9.png)
 
 3. Clink on Edit.
+
 ![image](https://user-images.githubusercontent.com/83507970/173616639-d5acb5ed-18dc-4456-a8a5-1fca7230fa4e.png)
 
 4. Go to SSH Keys. and click add. 
+
 ![image](https://user-images.githubusercontent.com/83507970/173616791-6abff5db-bc18-4c58-a9af-72cd6ed1f49f.png)
 
-5. Open your keys with text program and copy paste on Box
+5. Open your keys with text program and copy paste on Box.
+
 ![image](https://user-images.githubusercontent.com/83507970/173616954-d10d5f02-8ad7-43a7-a46c-a48845757f20.png)
 
 
