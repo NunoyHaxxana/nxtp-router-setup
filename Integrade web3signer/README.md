@@ -89,24 +89,50 @@ Description = ```Insert Your need name.``` Finally, click Add.
 ---
 
 
-## Step 4. Create Certificates & secrets
+## Step 5. Create Certificates & secrets
+### 5.1 Goto : https://portal.azure.com/?quickstart=true#view/HubsExtension/BrowseResource/resourceType/Microsoft.KeyVault%2Fvaults and click on Your Key vault.
 
+### 5.2 On Access policies go to ```Add access policy```
 ![image](https://user-images.githubusercontent.com/83507970/174643573-5da5822f-c0b0-4c67-8aef-3b36ffcfc0ee.png)
+
+Configure from template (optional) choose ```Key, Secret, & Certificate Management``` 
 ![image](https://user-images.githubusercontent.com/83507970/174643658-5ec952f1-91e9-4bcc-b0a8-ea880b3ffa6c.png)
+
+Select principal setup.
 ![image](https://user-images.githubusercontent.com/83507970/174643929-a34d3eed-2cfb-47c0-84ce-58464e787438.png)
+
+Authorized application setup.
 ![image](https://user-images.githubusercontent.com/83507970/174644122-ad23e2ad-febc-4a1c-a155-d2891fee9d94.png)
 
 
+## Finally, Add 
+
 ---
+
+## Step 6. Setup key.yaml
+### 6.1 Setup paramiter on key.yaml
 
 ```
 type: "azure-secret"
 keyType: "SECP256K1"
-clientSecret: "p888Q~iZSGpy2FppJXZTWkQ8eMCwAnns.u.zCbkY"
-clientId: "f165107a-3659-4ee2-947b-ca5c16db4ebe"
+tenantId: "Paramiter on step 1.4"
+vaultName: "Paramiter on step 1.5"
+secretName: "Paramiter on step 2.1"
+clientId: "Paramiter on step 3.2"
+clientSecret: "Paramiter on step 4.2"
+```
+Example.
+
+```
+type: "azure-secret"
+keyType: "SECP256K1"
 tenantId: "f8e9720c-00e8-4188-bdc6-683f8496cb89"
 vaultName: "connextrouter"
 secretName: "Connex-Privatekey"
+clientSecret: "p888Q~iZSGpy2FppJXZTWkQ8eMCwAnns.u.zCbkY"
+clientId: "f165107a-3659-4ee2-947b-ca5c16db4ebe"
 ```
 
+# Finished setup, Restart your Docker.
+```docker-compose restart ```
 
