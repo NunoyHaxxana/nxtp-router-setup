@@ -32,10 +32,10 @@ Click ``` Review + create```
 ###  1.3 Click ``` JSON View``` 
 ![image](https://user-images.githubusercontent.com/83507970/174639174-807d3369-c33a-46ca-9c94-229798bbe887.png)
 
-###  1.4 Noted Paramiter on ``` "tenantId": "f8e9720c-00e8-4188-bdc6-683f8496cb89", ```
+###  1.4 Noted Parameter on ``` "tenantId": "f8e9720c-00e8-4188-bdc6-683f8496cb89", ```
 ![image](https://user-images.githubusercontent.com/83507970/174639633-f6201533-3949-4a70-af15-c300ce4333a3.png)
 
-###  1.5 Noted Paramiter on ``` "vaultUri": "https://connextrouter.vault.azure.net/", ```
+###  1.5 Noted Parameter on ``` "vaultUri": "https://connextrouter.vault.azure.net/", ```
 ![image](https://user-images.githubusercontent.com/83507970/174642822-effd8b56-2757-4f8d-8c7c-93b052fce64f.png)
 
 
