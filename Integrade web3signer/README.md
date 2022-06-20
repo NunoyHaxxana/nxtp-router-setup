@@ -105,7 +105,7 @@ Authorized application setup.
 ![image](https://user-images.githubusercontent.com/83507970/174644122-ad23e2ad-febc-4a1c-a155-d2891fee9d94.png)
 
 
-## Finally, Add 
+## Finally, Add and Save.
 
 ---
 
