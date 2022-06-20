@@ -2,27 +2,32 @@
 
 
 ## Step 1. Create Key vaults
-Goto : https://portal.azure.com/?quickstart=true#create/Microsoft.KeyVault
+### 1.1 Goto : https://portal.azure.com/?quickstart=true#create/Microsoft.KeyVault
 ![image](https://user-images.githubusercontent.com/83507970/174634714-88926e90-902e-4a06-9197-a8742026b43b.png)
 
-Resource group > Create new
-Instance details
-Key vault name > Connextrouter
-Region > Choose Your Location
-Pricing tier > Standard
+On Resource group > Clik Create new, and insert ``` Connext``` 
+
+On Key vault name > insert ``` Connextrouter``` 
+
+On Region > Choose Your Location
+
+On  Pricing tier > Choose Standard
 
 ![image](https://user-images.githubusercontent.com/83507970/174635171-931a4530-91d8-44ba-936a-fd0d7a7184df.png)
-Click 
+
+Click ``` Review + create``` 
 
 ![image](https://user-images.githubusercontent.com/83507970/174635787-aa1d3ef6-97a8-4990-a6d5-72c37b30fefa.png)
-Click 
+
+Click ``` Review + create``` 
 
 
 ![image](https://user-images.githubusercontent.com/83507970/174635877-434916cc-d322-4854-bd5d-3c6d1536cc64.png)
-Waiting to Create
+### Waiting to Create Key vaults 1 - 2 Mins.
 
 
 ![image](https://user-images.githubusercontent.com/83507970/174636166-58164766-c21f-4098-afb0-608908528885.png)
+###  1.2 Finally, click ``` Go to resouce``` .
 
 ![image](https://user-images.githubusercontent.com/83507970/174639174-807d3369-c33a-46ca-9c94-229798bbe887.png)
 
@@ -61,14 +66,14 @@ https://portal.azure.com/?quickstart=true#view/Microsoft_AAD_IAM/ActiveDirectory
 
 
 
-
+```
 type: "azure-secret"
 keyType: "SECP256K1"
-authenticationMode: "CLIENT_SECRET"
+clientSecret: "p888Q~iZSGpy2FppJXZTWkQ8eMCwAnns.u.zCbkY"
 clientId: "f165107a-3659-4ee2-947b-ca5c16db4ebe"
 tenantId: "f8e9720c-00e8-4188-bdc6-683f8496cb89"
 vaultName: "connextrouter"
-secretName: "Connex-Privatekey"
+secretName: "Connex-Privatekey"```
 
 
 ![image](https://user-images.githubusercontent.com/83507970/174643573-5da5822f-c0b0-4c67-8aef-3b36ffcfc0ee.png)
