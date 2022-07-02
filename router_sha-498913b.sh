@@ -138,9 +138,9 @@ echo " "
 cd $HOME/connext/nxtp-router-docker-compose
 cp .env.example .env
 echo " "
-echo -e "\e[1m\e[32mLast NXTP Version : sha-0039612 \e[0m" && sleep 1
-sed -i 's/latest/sha-0039612/g' .env
-docker pull ghcr.io/connext/router:sha-0039612
+echo -e "\e[1m\e[32mLast NXTP Version : sha-498913b \e[0m" && sleep 1
+sed -i 's/latest/sha-498913b/g' .env
+docker pull ghcr.io/connext/router:sha-498913b
 }
 
 
