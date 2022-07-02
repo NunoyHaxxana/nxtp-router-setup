@@ -68,6 +68,7 @@ echo -e "\e[1m\e[92mYour Private Key:  \e[0m" $(cat $HOME/connext/router_private
 }
 
 
+
 function installnxtp {
 echo " "
 echo -e "\e[1m\e[32mPreparing to install Router ... \e[0m" && sleep 1
