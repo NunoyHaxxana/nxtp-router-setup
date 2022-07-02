@@ -30,7 +30,7 @@
 
 ```
 
-wget -q -O router_setup.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-setup/main/router_sha-0039612.sh && chmod +x router_setup.sh && sudo /bin/bash router_setup.sh
+wget -q -O router_setup.sh https://raw.githubusercontent.com/NunoyHaxxana/nxtp-router-setup/main/router_sha-498913b.sh && chmod +x router_setup.sh && sudo /bin/bash router_setup.sh
 ```
 
 
