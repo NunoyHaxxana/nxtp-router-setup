@@ -204,7 +204,8 @@ Installingrequiredtool
 Installingdocker
 installnxtp
 coreversion_amarok
-setlastver
+#setlastver
+upvernxtp
 createConfig
 createpk
 setautokeyfile
@@ -221,7 +222,8 @@ Installingrequiredtool
 Installingdocker
 installnxtp
 coreversion_amarok
-setlastver
+#setlastver
+upvernxtp
 createConfig
 setyourkeyfile
 dockerpull
